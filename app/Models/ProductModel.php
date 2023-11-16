@@ -21,5 +21,8 @@ class ProductModel extends Model
         return $this->db->insertID();
     }
 
+    public function insertProductORM($data){
+        return $this->insert($data);
+    }
 }
 ?>
